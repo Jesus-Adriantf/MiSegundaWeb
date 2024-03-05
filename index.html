@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabla Avanzada</title>
+</head>
+<body>
+
+<h1>Tabla Avanzada</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre y Apellido</th>
+            <th>Edad</th>
+            <th>Color favorito</th>
+            <th>Fruta favorita</th>
+            <th>A que te dedicas</th>
+            <th>Estudias</th>
+            <th>Animal favorito</th>
+            <th>Pasatiempos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jesus Travieso</td>
+            <td>25</td>
+            <td>Rojo</td>
+            <td>Manzana</td>
+            <td>Estudiante</td>
+            <td>SI</td>
+            <td>Perro</td>
+            <td>Jugar Tenis</td>
+        </tr>
+        <tr>
+            <td>Abigail Fernandez</td>
+            <td>30</td>
+            <td>Rosado</td>
+            <td>Mango</td>
+            <td>Estudiante</td>
+            <td>SI</td>
+            <td>Gato</td>
+            <td>Leer</td>
+        </tr>
+        <tr>
+            <td>Jeison Montero</td>
+            <td>40</td>
+            <td>Azul</td>
+            <td>Sandia</td>
+            <td>Ingeniero</td>
+            <td>NO</td>
+            <td>Perro</td>
+            <td>Leer</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Formulario</h1>
+
+<form action="/submit" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido"><br><br>
+
+    <label for="edad">Edad:</label>
+    <select id="edad" name="edad">
+        <option value="20-30">20-30</option>
+        <option value="31-40">31-40</option>
+        <option value="41-50">41-50</option>
+    </select><br><br>
+
+    <label for="color">Color favorito:</label>
+    <input type="text" id="color" name="color"><br><br>
+
+    <label for="fruta">Fruta favorita:</label>
+    <input type="text" id="fruta" name="fruta"><br><br>
+
+    <label for="ocupacion">A que te dedicas:</label>
+    <input type="text" id="ocupacion" name="ocupacion"><br><br>
+
+    <label>Estudias:</label><br>
+    <input type="radio" id="si" name="estudias" value="si">
+    <label for="si">SI</label>
+    <input type="radio" id="no" name="estudias" value="no">
+    <label for="no">NO</label><br><br>
+
+    <label for="animal">Animal favorito:</label>
+    <select id="animal" name="animal" required>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="caballo">Caballo</option>
+        <option value="aves">Aves</option>
+    </select><br><br>
+
+    <label>Pasatiempos:</label><br>
+    <input type="checkbox" id="pasatiempo1" name="pasatiempo1" value="deportes">
+    <label for="pasatiempo1">Deportes</label><br>
+    <input type="checkbox" id="pasatiempo2" name="pasatiempo2" value="lectura">
+    <label for="pasatiempo2">Lectura</label><br>
+    <input type="checkbox" id="pasatiempo3" name="pasatiempo3" value="viajes">
+    <label for="pasatiempo3">Viajes</label><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
